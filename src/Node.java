@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-//Node represents a vertex on the graph representation of the road structure
+//Node represents a vertex on the graph representation of the roads' structure
 public class Node 
 {
 	
