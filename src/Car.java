@@ -42,6 +42,14 @@ public class Car
 		return false;
 	}
 
+	public boolean finalLink (Link currentLink)
+	{
+		//if currentLink end node == endNode
+		//return true
+		//else
+		//return false
+	}
+
 	public void setSpeed (double speedFactor, Link currentLink)
 	{
 		//get speed (speed limit or current average speed) from current link, modify by speed factor, randomize
