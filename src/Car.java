@@ -52,7 +52,7 @@ public class Car
 
 	public void setSpeed (double speedFactor, Link currentLink)
 	{
-		//get speed (speed limit or current average speed) from current link, modify by speed factor, randomize
+		//get speed (current average speed) from current link, modify by speed factor, randomize
 	}
 
 	public boolean accidentOccurs (double accidentRisk, Link currentLink)

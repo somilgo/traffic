@@ -1,26 +1,29 @@
 //Link represents the edge between Nodes (vertices) in the graph representation of the roads
 public class Link {
 
-	Node startNode;
-	Node endNode;
-	double length;
-	//added attributes
-	double speed_limit
-	double speed
-	int capacity 
-	// double accident_risk(x,v)
-	boolean has_accident
-	double accident_location 
+
+	private Node[] startEnd = new Node[2];
+	private ArrayList<Car> cars;
+	private double length;
+	//double speed_limit
+	private double meanTargetSpeed;
+	private double meanCurrentSpeed;
+	private double capacity;
+	private double accident_risk;
+	private boolean has_accident;
+	private double accident_location; 
+	private int laneCount;
 
 
-	
+	//constructor - needs editing 
 	Link (Node start, Node end, double distance)
 	{
-		startNode = start;
-		endNode = end;
+		startEnd[0]= start;
+		startEnd[1] = end;
 		length = distance;
 	}
 
+	//getters and setters - needs editing
 	public double getLength(){
 		return this.length;
 
@@ -35,10 +38,11 @@ public class Link {
 		return this.has_accident;
 	}
 
-	public double accident_risk(x,v){
-		//modify this:
-		
-		return 0;
+	//real methods
+	
+	public currentSpeedCalc(ArrayList<Car> cars, double length, double meanTargetSpeed, double capacity)
+	{
+		//Calculate currentMeanSpeed using model shown in my dad's paper.
 	}
 	
 }
